@@ -18,9 +18,9 @@ while ($credits -gt 0) {
     if ($choice -eq 'q') { break }
     
     $credits -= 10
-    $s1 = Get-Random -Min 1 -Max 4
-    $s2 = Get-Random -Min 1 -Max 4
-    $s3 = Get-Random -Min 1 -Max 4
+    $s1 = Get-Random -Minimum 1 -Maximum 4
+    $s2 = Get-Random -Minimum 1 -Maximum 4
+    $s3 = Get-Random -Minimum 1 -Maximum 4
 
     Write-Host ""
     Write-Host "          [ $s1 ]   [ $s2 ]   [ $s3 ]          " -ForegroundColor Cyan
